@@ -128,93 +128,544 @@ export const INITIAL_PACKAGES: Package[] = [
     "id": "pkg-basic-health",
     "slug": "basic-health-package",
     "name": "Basic Health Package",
-    "subtitle": "Essential Preventive Checkup — 8 Key Clinical Profiles (MRP ₹2,399)",
-    "tag": "Bestseller ₹799",
-    "description": "Complete basic preventive health checkup covering 8 core clinical profiles: CBC, ESR, Sugar Fasting, KFT Extended, LFT, Lipid Profile, Thyroid Profile, and Urine Routine & Microscopy with Free Home Sample Collection.",
-    "originalPrice": 2399,
-    "offerPrice": 799,
-    "couplePrice": 1499,
-    "savings": 1600,
-    "parametersCount": 60,
+    "subtitle": "Stay Healthy, Stay Ahead — 9 Core Clinical Profiles (Offer Price ₹999)",
+    "tag": "Bestseller ₹999",
+    "description": "A perfect package for regular health check-up and early detection of health issues covering 9 key clinical investigations: Lipid Profile, CBC & ESR, LFT, KFT, Thyroid Profile, eGFR Level, Sugar Fasting, Urine Routine, and Serum Calcium with Free Home Sample Collection.",
+    "originalPrice": 2499,
+    "offerPrice": 999,
+    "couplePrice": 1899,
+    "savings": 1500,
+    "parametersCount": 62,
     "sampleType": "Blood & Urine (Fasting)",
     "fastingRequired": true,
     "fastingHours": 10,
     "reportDeliveryHours": 12,
-    "posterImage": "/images/basic-health-package-brochure.svg",
+    "posterImage": "/images/basic-health-package-official.jpg",
     "isFeatured": true,
     "isActive": true,
+    "benefits": [
+      "Comprehensive Health Check-up",
+      "Early Detection of Health Issues",
+      "Trusted & Accurate Reports",
+      "Affordable & Value for Money",
+      "Home Sample Collection Available*",
+      "12-14 Hours Report Delivery"
+],
     "inclusionsSummary": [
-      "CBC - Complete Blood Count (24 parameters)",
-      "ESR - Erythrocyte Sedimentation Rate",
-      "Sugar Fasting - Blood Glucose Fasting",
-      "KFT Extended - Kidney Function Test",
-      "LFT - Liver Function Test (10 parameters)",
-      "Lipid Profile (Cholesterol, HDL, LDL, Triglycerides)",
-      "Thyroid Profile (Total T3, Total T4, TSH)",
-      "Urine Routine & Microscopy (R/M)"
+      "Lipid Profile (Total Cholesterol, Triglycerides, HDL, LDL, VLDL)",
+      "CBC & ESR (Complete Blood Count 24 Parameters + Inflammation)",
+      "LFT - Liver Function Test (10 Parameters)",
+      "KFT - Kidney Function Test (Urea, Creatinine, BUN, Uric Acid)",
+      "Thyroid Profile (Total T3, Total T4, TSH Ultrasensitive)",
+      "eGFR Level (Glomerular Filtration Rate for Kidney Health)",
+      "Sugar Fasting (Blood Glucose Fasting Screen)",
+      "Urine Routine & Microscopy (20 Physical, Chemical & Microscopic checks)",
+      "S. Calcium (Serum Calcium for Bone & Cellular Vitality)"
     ],
     "includedTests": [
+      {
+        "name": "Lipid Profile",
+        "description": "Evaluates blood cholesterol levels and cardiovascular disease risk",
+        "parameters": [
+          "Cholesterol Total",
+          "HDL Cholesterol (Good)",
+          "LDL Cholesterol (Bad)",
+          "VLDL Cholesterol",
+          "Triglycerides",
+          "Total Cholesterol / HDL Ratio",
+          "LDL / HDL Ratio"
+        ],
+        "purpose": "Evaluates cholesterol & risk of heart disease"
+      },
+      {
+        "name": "CBC & ESR",
+        "description": "Complete blood count and erythrocyte sedimentation rate",
+        "parameters": [
+          "Hemoglobin",
+          "Total Leukocyte Count (TLC)",
+          "Neutrophils",
+          "Lymphocytes",
+          "Monocytes",
+          "Eosinophils",
+          "Basophils",
+          "Platelet Count",
+          "Total RBC Count",
+          "PCV / Hematocrit",
+          "MCV",
+          "MCH",
+          "MCHC",
+          "RDW-CV",
+          "RDW-SD",
+          "ESR (Westergren Method)"
+        ],
+        "purpose": "Detects infections, anemia and inflammatory conditions"
+      },
+      {
+        "name": "LFT (Liver Function Test)",
+        "description": "Comprehensive hepatic panel assessing liver enzyme health and protein synthesis",
+        "parameters": [
+          "Bilirubin Total",
+          "Bilirubin Direct",
+          "Bilirubin Indirect",
+          "SGOT / AST",
+          "SGPT / ALT",
+          "Alkaline Phosphatase (ALP)",
+          "Total Protein",
+          "Serum Albumin",
+          "Serum Globulin",
+          "A:G Ratio"
+        ],
+        "purpose": "Assesses liver function and detects liver disorders"
+      },
+      {
+        "name": "KFT (Kidney Function Test)",
+        "description": "Evaluates kidney waste filtration, urea clearance and electrolyte balance",
+        "parameters": [
+          "Blood Urea",
+          "Blood Urea Nitrogen (BUN)",
+          "Serum Creatinine",
+          "Uric Acid",
+          "BUN / Creatinine Ratio"
+        ],
+        "purpose": "Evaluates kidney function and detects kidney disorders"
+      },
+      {
+        "name": "Thyroid Profile",
+        "description": "Endocrine assessment of master metabolic hormones via CLIA",
+        "parameters": [
+          "Total Triiodothyronine (T3)",
+          "Total Thyroxine (T4)",
+          "Thyroid Stimulating Hormone (TSH Ultrasensitive)"
+        ],
+        "purpose": "Checks thyroid hormone levels and detects thyroid disorders"
+      },
+      {
+        "name": "eGFR Level",
+        "description": "Estimated glomerular filtration rate calculated from serum creatinine",
+        "parameters": [
+          "eGFR (Estimated Glomerular Filtration Rate)"
+        ],
+        "purpose": "Detects kidney filtration rate and functional renal health"
+      },
+      {
+        "name": "Sugar Fasting",
+        "description": "Baseline blood glucose measurement after overnight fasting",
+        "parameters": [
+          "Fasting Blood Glucose"
+        ],
+        "purpose": "Screens for diabetes and blood sugar level irregularities"
+      },
+      {
+        "name": "Urine Routine",
+        "description": "Complete physical, chemical and microscopic sediment urinalysis",
+        "parameters": [
+          "Colour",
+          "Appearance",
+          "Specific Gravity",
+          "pH",
+          "Urine Protein / Albumin",
+          "Urine Glucose",
+          "Ketone Bodies",
+          "Bile Salts & Pigments",
+          "Pus Cells (WBCs)",
+          "Epithelial Cells",
+          "Red Blood Cells (RBCs)",
+          "Casts & Crystals"
+        ],
+        "purpose": "Detects infections, kidney problems and other abnormalities"
+      },
+      {
+        "name": "S. Calcium",
+        "description": "Total serum calcium assessment",
+        "parameters": [
+          "Serum Calcium"
+        ],
+        "purpose": "Checks calcium levels for bone, neuromuscular and overall health"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How much fasting is required for the Basic Health Package?",
+        "answer": "A minimum of 10-12 hours of overnight fasting is mandatory. You may drink plain water, but avoid tea, coffee, milk, and breakfast until sample collection is completed."
+      },
+      {
+        "question": "When and how will I receive my test reports?",
+        "answer": "Reports are processed in our NABL accredited laboratory and delivered within 12-14 hours directly to your WhatsApp and registered email. You can also view or download them anytime via our Online Reports Portal."
+      },
+      {
+        "question": "Is home sample collection really free?",
+        "answer": "Yes, free home sample collection is provided across Greater Noida (including Paramount Golf Foreste, Zeta 1, Alpha, Beta, Delta, Gaur City) and Delhi North with zero home visit charges."
+      }
+    ]
+  },
+  {
+    "id": "pkg-advanced-health",
+    "slug": "advanced-health-package",
+    "name": "Platinum Health Package",
+    "subtitle": "Stay Healthy, Stay Ahead — 13 Clinical Profiles with Vitamins, Iron & HbA1c (Offer ₹1,499)",
+    "tag": "Popular ₹1,499",
+    "description": "Our most comprehensive preventive health package covering 13 major clinical profiles and 88 parameters. Includes all core organs (Heart, Liver, Kidney, Thyroid), 3-month average Diabetes marker (HbA1c), complete Vitamin D3 & B12 panels, and deep Iron Profile with Ferritin.",
+    "originalPrice": 3999,
+    "offerPrice": 1499,
+    "couplePrice": 2799,
+    "savings": 2500,
+    "parametersCount": 88,
+    "sampleType": "Blood & Urine (Fasting)",
+    "fastingRequired": true,
+    "fastingHours": 10,
+    "reportDeliveryHours": 12,
+    "posterImage": "/images/platinum-advanced-health-package-official.jpg",
+    "isFeatured": true,
+    "isActive": true,
+    "benefits": [
+      "Comprehensive Health Check-up",
+      "Early Detection of Health Issues",
+      "Fast & Accurate Reports",
+      "12-14 Hours Report Delivery",
+      "Advanced Lab Technology",
+      "Certified Lab Experts"
+],
+    "inclusionsSummary": [
+      "Lipid Profile (Total Cholesterol, Triglycerides, HDL, LDL, VLDL)",
+      "CBC & ESR (Full Hemogram 24 Parameters + Inflammation)",
+      "LFT (Liver Function Test - 10 Hepatic Parameters)",
+      "KFT (Kidney Function Test - Urea, BUN, Creatinine, Uric Acid)",
+      "Thyroid Profile (Total T3, Total T4, TSH Ultrasensitive)",
+      "eGFR Level (Calculated Kidney Filtration Rate)",
+      "Sugar Fasting (Baseline Fasting Blood Glucose)",
+      "Urine Routine & Microscopy (Complete Urinalysis)",
+      "S. Calcium (Bone & Neuromuscular Mineral Marker)",
+      "HbA1c - Glycated Hemoglobin (Gold standard 3-month average glucose)",
+      "Vitamin D3 25-Hydroxy (Bone, immunity and vitality check)",
+      "Vitamin B12 (Nerve health, brain function and energy metabolism)",
+      "Complete Iron Profile (Serum Iron, TIBC, UIBC, % Transferrin, Ferritin)"
+    ],
+    "includedTests": [
+      {
+        "name": "Lipid Profile",
+        "description": "Complete blood cholesterol and cardiovascular risk evaluation",
+        "parameters": [
+          "Cholesterol Total",
+          "HDL Cholesterol (Good)",
+          "LDL Cholesterol (Bad)",
+          "VLDL Cholesterol",
+          "Triglycerides",
+          "TC / HDL Ratio",
+          "LDL / HDL Ratio"
+        ],
+        "purpose": "Evaluates cholesterol & risk of heart disease"
+      },
+      {
+        "name": "CBC & ESR",
+        "description": "Complete blood count and systemic inflammatory index",
+        "parameters": [
+          "Hemoglobin",
+          "Total Leukocyte Count (TLC)",
+          "Neutrophils",
+          "Lymphocytes",
+          "Monocytes",
+          "Eosinophils",
+          "Basophils",
+          "Platelet Count",
+          "Total RBC Count",
+          "PCV / Hematocrit",
+          "MCV",
+          "MCH",
+          "MCHC",
+          "RDW-CV",
+          "RDW-SD",
+          "ESR (Westergren Method)"
+        ],
+        "purpose": "Detects infections, anemia and inflammatory conditions"
+      },
+      {
+        "name": "LFT (Liver Function Test)",
+        "description": "10-parameter hepatic health panel",
+        "parameters": [
+          "Bilirubin Total",
+          "Bilirubin Direct",
+          "Bilirubin Indirect",
+          "SGOT / AST",
+          "SGPT / ALT",
+          "Alkaline Phosphatase (ALP)",
+          "Total Protein",
+          "Serum Albumin",
+          "Serum Globulin",
+          "A:G Ratio"
+        ],
+        "purpose": "Assesses liver function and detects liver disorders"
+      },
+      {
+        "name": "KFT (Kidney Function Test)",
+        "description": "Evaluates renal function, urea clearance and metabolic filtration",
+        "parameters": [
+          "Blood Urea",
+          "Blood Urea Nitrogen (BUN)",
+          "Serum Creatinine",
+          "Uric Acid",
+          "BUN / Creatinine Ratio"
+        ],
+        "purpose": "Evaluates kidney function and detects kidney disorders"
+      },
+      {
+        "name": "Thyroid Profile",
+        "description": "Ultrasensitive endocrine evaluation for thyroid disorders",
+        "parameters": [
+          "Total Triiodothyronine (T3)",
+          "Total Thyroxine (T4)",
+          "Thyroid Stimulating Hormone (TSH Ultrasensitive)"
+        ],
+        "purpose": "Checks thyroid hormone levels and detects thyroid disorders"
+      },
+      {
+        "name": "eGFR Level",
+        "description": "Kidney filtration rate estimation",
+        "parameters": [
+          "eGFR (Estimated Glomerular Filtration Rate)"
+        ],
+        "purpose": "Detects kidney filtration rate and kidney health"
+      },
+      {
+        "name": "Sugar Fasting",
+        "description": "Fasting blood sugar level",
+        "parameters": [
+          "Fasting Blood Glucose"
+        ],
+        "purpose": "Screens for diabetes and blood sugar levels"
+      },
+      {
+        "name": "Urine Routine",
+        "description": "Comprehensive physical, chemical and microscopic urine screen",
+        "parameters": [
+          "Colour",
+          "Appearance",
+          "Specific Gravity",
+          "pH",
+          "Urine Protein",
+          "Urine Glucose",
+          "Ketone Bodies",
+          "Bile Pigments",
+          "Pus Cells",
+          "Epithelial Cells",
+          "RBCs",
+          "Casts & Crystals"
+        ],
+        "purpose": "Detects infections, kidney problems and other abnormalities"
+      },
+      {
+        "name": "S. Calcium",
+        "description": "Serum calcium level",
+        "parameters": [
+          "Serum Calcium"
+        ],
+        "purpose": "Checks calcium levels for bone and overall health"
+      },
+      {
+        "name": "HbA1c (Glycated Hemoglobin)",
+        "description": "Gold-standard 90-day average blood sugar indicator",
+        "parameters": [
+          "HbA1c Glycated Hemoglobin",
+          "Estimated Average Glucose (eAG)"
+        ],
+        "purpose": "Indicates average blood sugar level over last 2-3 months and detects prediabetes"
+      },
+      {
+        "name": "Vitamin D3 25 Hydroxy",
+        "description": "Serum 25-hydroxycholecalciferol via CLIA",
+        "parameters": [
+          "Vitamin D3 25-OH Total"
+        ],
+        "purpose": "Checks Vitamin D level for bone, immunity & overall health"
+      },
+      {
+        "name": "Vitamin B12",
+        "description": "Serum cyanocobalamin concentration",
+        "parameters": [
+          "Vitamin B12 (Cyanocobalamin)"
+        ],
+        "purpose": "Assesses Vitamin B12 level for nerve health, brain vitality & energy"
+      },
+      {
+        "name": "Iron Profile",
+        "description": "Complete blood iron dynamics and cellular iron stores",
+        "parameters": [
+          "Serum Iron",
+          "Total Iron Binding Capacity (TIBC)",
+          "Unsaturated Iron Binding Capacity (UIBC)",
+          "% Transferrin Saturation",
+          "Serum Ferritin"
+        ],
+        "purpose": "Detects iron deficiency, latent anemia and cell oxygen transport"
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Why is the Platinum / Advanced Package better than basic checkups?",
+        "answer": "Unlike basic packages, the Platinum Package includes HbA1c (your 3-month blood sugar average), both Vitamin D3 and B12 (which cause chronic fatigue and aches), and a full Iron Profile with Ferritin for deep nutritional evaluation."
+      },
+      {
+        "question": "Is fasting required?",
+        "answer": "Yes, 10-12 hours of overnight fasting is required for accurate fasting blood sugar, lipid profile, and iron measurements."
+      },
+      {
+        "question": "How long does it take to deliver reports?",
+        "answer": "All 13 profiles are completed in-house and validated by our Pathologist within 12-14 hours, sent directly to your WhatsApp and email."
+      }
+    ]
+  },
+  {
+    "id": "pkg-cardiac-health",
+    "slug": "cardiac-health-profile",
+    "name": "Cardiac Health Profile",
+    "subtitle": "Comprehensive Cardiovascular Risk & Heart Muscle Wellness Panel (Special Offer ₹2,499)",
+    "tag": "Specialist ₹2,499",
+    "description": "A comprehensive checkup to assess your heart health and detect risks early. Includes high-sensitivity cardiac injury markers (Troponin-T, CPK-MB, CPK, S LDH, HS-CRP), advanced apolipoproteins (APO-1, APO-3), Lipid Profile, Liver & Kidney Function, Thyroid Profile, eGFR, S. Calcium, Sugar Fasting, and Urine R/M.",
+    "originalPrice": 4999,
+    "offerPrice": 2499,
+    "couplePrice": 4500,
+    "savings": 2500,
+    "parametersCount": 52,
+    "sampleType": "Blood & Urine (Fasting)",
+    "fastingRequired": true,
+    "fastingHours": 10,
+    "reportDeliveryHours": 14,
+    "posterImage": "/images/cardiac-health-profile-official.jpg",
+    "isFeatured": true,
+    "isActive": true,
+    "benefits": [
+      "Early detection of heart disease risk",
+      "Comprehensive assessment of heart & organ health",
+      "Helps in timely prevention & better management",
+      "For all adults above 30 years or with risk factors",
+      "100% Automated Testing",
+      "Free Home Sample Collection"
+],
+    "inclusionsSummary": [
+      "CPK-MB (Cardiac Isoenzyme for Heart Muscle Damage)",
+      "HS-CRP (High-Sensitivity C-Reactive Protein Heart Inflammation)",
+      "S LDH (Serum Lactate Dehydrogenase Tissue Damage Marker)",
+      "TROPONIN-T (Highly Specific Cardiac Marker for Heart Attack Risk)",
+      "CPK (Creatine Phosphokinase General & Heart Muscle Enzyme)",
+      "APO-1 / Apolipoprotein A1 (Good HDL Cholesterol Particle Indicator)",
+      "APO-3 / Apolipoprotein B (Atherogenic Bad Cholesterol Indicator)",
+      "Lipid Profile (Total Cholesterol, Triglycerides, HDL, LDL, VLDL)",
+      "LFT (Liver Function Test - Assesses Overall Metabolic Health)",
+      "KFT (Kidney Function Test - Filtration & Fluid Balance)",
+      "CBC & ESR (Complete Blood Count & Inflammation Marker)",
+      "Thyroid Profile (Total T3, Total T4, TSH Ultrasensitive)",
+      "eGFR Level (Kidney Glomerular Filtration Rate)",
+      "S. Calcium (Essential Mineral for Heart Rhythm & Bone Health)",
+      "Sugar Fasting (Diabetes Screening)",
+      "Urine R/M (Routine Urinalysis for Renal & Systemic Health)"
+    ],
+    "includedTests": [
+      {
+        "name": "CPK-MB",
+        "description": "Cardiac specific creatine kinase isoenzyme",
+        "parameters": [
+          "CPK-MB"
+        ],
+        "purpose": "Helps detect heart muscle damage and acute myocardial stress"
+      },
+      {
+        "name": "HS-CRP (High Sensitivity CRP)",
+        "description": "Ultrasensitive systemic vascular inflammation marker",
+        "parameters": [
+          "High Sensitivity C-Reactive Protein (HS-CRP)"
+        ],
+        "purpose": "High-sensitivity marker of arterial inflammation & heart disease risk"
+      },
+      {
+        "name": "S LDH (Serum Lactate Dehydrogenase)",
+        "description": "Cellular enzyme indicating myocardial and tissue breakdown",
+        "parameters": [
+          "Serum Lactate Dehydrogenase (LDH)"
+        ],
+        "purpose": "Assesses tissue damage including heart muscle"
+      },
+      {
+        "name": "TROPONIN-T",
+        "description": "Gold standard myocardial infarction biomarker",
+        "parameters": [
+          "Troponin-T (Cardiac Specific)"
+        ],
+        "purpose": "Highly specific marker for heart attack and myocardial necrosis"
+      },
+      {
+        "name": "CPK (Creatine Phosphokinase Total)",
+        "description": "Total muscle enzyme evaluation",
+        "parameters": [
+          "CPK Total"
+        ],
+        "purpose": "Indicates general muscle injury including heart muscle"
+      },
+      {
+        "name": "APO-1 (Apolipoprotein A1)",
+        "description": "Primary protein constituent of cardioprotective HDL",
+        "parameters": [
+          "Apolipoprotein A1 (APO-A1)"
+        ],
+        "purpose": "Apolipoprotein A1 — Good cholesterol indicator and anti-atherogenic marker"
+      },
+      {
+        "name": "APO-3 / APO-B (Apolipoprotein B)",
+        "description": "Primary protein constituent of atherogenic LDL/VLDL particles",
+        "parameters": [
+          "Apolipoprotein B (APO-B)",
+          "Apo B / Apo A1 Ratio"
+        ],
+        "purpose": "Apolipoprotein B — Bad cholesterol particle indicator for plaque formation"
+      },
+      {
+        "name": "Lipid Profile",
+        "description": "Complete blood cholesterol panel",
+        "parameters": [
+          "Cholesterol Total",
+          "Triglycerides",
+          "HDL Cholesterol",
+          "LDL Cholesterol",
+          "VLDL Cholesterol",
+          "Total Cholesterol / HDL Ratio"
+        ],
+        "purpose": "Total Cholesterol, Triglycerides, HDL, LDL, VLDL evaluation"
+      },
+      {
+        "name": "LFT (Liver Function Test)",
+        "description": "10-parameter liver and protein panel",
+        "parameters": [
+          "Bilirubin Total",
+          "SGOT",
+          "SGPT",
+          "ALP",
+          "Total Protein",
+          "Serum Albumin"
+        ],
+        "purpose": "Liver function test to assess overall metabolic and medication clearance health"
+      },
+      {
+        "name": "KFT (Kidney Function Test)",
+        "description": "Renal profile assessing fluid and filtration balance",
+        "parameters": [
+          "Blood Urea",
+          "BUN",
+          "Serum Creatinine",
+          "Uric Acid"
+        ],
+        "purpose": "Kidney function test for waste filtration and vascular health"
+      },
       {
         "name": "CBC & ESR",
         "description": "Complete blood count and inflammatory index",
         "parameters": [
-          "Haemoglobin",
+          "Hemoglobin",
           "TLC",
-          "DLC",
           "Platelet Count",
-          "RBC",
+          "RBC Count",
           "PCV",
           "MCV",
           "ESR"
         ],
-        "purpose": "Detects infections, anemia, and general health status"
-      },
-      {
-        "name": "Sugar Fasting",
-        "description": "Fasting blood glucose measurement",
-        "parameters": [
-          "Fasting Blood Glucose"
-        ],
-        "purpose": "Screens for prediabetes and diabetes mellitus"
-      },
-      {
-        "name": "KFT (Kidney Function Test)",
-        "description": "Renal function evaluation",
-        "parameters": [
-          "Urea",
-          "Creatinine",
-          "Uric Acid",
-          "BUN",
-          "eGFR Calculation"
-        ],
-        "purpose": "Assesses kidney filtration efficiency and metabolic clearance"
-      },
-      {
-        "name": "LFT (Liver Function Test)",
-        "description": "Hepatic enzyme and protein evaluation",
-        "parameters": [
-          "Bilirubin Total",
-          "Bilirubin Direct",
-          "SGOT / AST",
-          "SGPT / ALT",
-          "Alkaline Phosphatase",
-          "Total Protein",
-          "Albumin",
-          "Globulin"
-        ],
-        "purpose": "Evaluates liver health, bile secretion, and enzyme integrity"
-      },
-      {
-        "name": "Lipid Profile",
-        "description": "Cardiovascular lipid fractions",
-        "parameters": [
-          "Total Cholesterol",
-          "Triglycerides",
-          "HDL Good Cholesterol",
-          "LDL Bad Cholesterol",
-          "VLDL"
-        ],
-        "purpose": "Assesses cardiovascular and atherosclerosis risk"
+        "purpose": "Complete blood count & inflammation marker"
       },
       {
         "name": "Thyroid Profile",
@@ -224,567 +675,355 @@ export const INITIAL_PACKAGES: Package[] = [
           "Total T4",
           "TSH Ultrasensitive"
         ],
-        "purpose": "Screens for hypo/hyperthyroidism and metabolic rate disorders"
+        "purpose": "Assesses thyroid function which directly influences heart rate and blood pressure"
       },
       {
-        "name": "Urine Routine & Microscopy",
-        "description": "Physical, chemical, and microscopic urine analysis",
+        "name": "eGFR Level",
+        "description": "Kidney filtration rate estimation",
         "parameters": [
-          "Color",
-          "pH",
-          "Specific Gravity",
-          "Protein",
-          "Sugar",
-          "Pus Cells",
-          "RBCs",
-          "Epithelial Cells"
+          "eGFR"
         ],
-        "purpose": "Detects urinary tract infections, renal excretion issues, and systemic metabolic changes"
+        "purpose": "Evaluates kidney filtration rate"
+      },
+      {
+        "name": "S. Calcium",
+        "description": "Serum calcium level",
+        "parameters": [
+          "Serum Calcium"
+        ],
+        "purpose": "Essential mineral for heart muscle contraction and rhythm stability"
+      },
+      {
+        "name": "Sugar Fasting",
+        "description": "Fasting blood sugar test",
+        "parameters": [
+          "Blood Glucose Fasting"
+        ],
+        "purpose": "Fasting blood sugar for diabetes and cardiovascular risk screening"
+      },
+      {
+        "name": "Urine R/M",
+        "description": "Routine urinalysis",
+        "parameters": [
+          "Urine Protein",
+          "Glucose",
+          "Pus Cells",
+          "Microscopic examination"
+        ],
+        "purpose": "Routine urinalysis for infection & kidney health"
       }
     ],
-    "benefits": [
-      "Essential health screen covering 8 critical organ profiles",
-      "Authentic flyer offer: Single Person ₹799 / Couple (2 Persons) ₹1,499 (Save ₹1,600)",
-      "Free Home Sample Collection arranged via Aryan Saini: 8796645850",
-      "Fast turnaround with verified reports available in 12-14 hours online & via WhatsApp",
-      "Accredited NABL standards with expert quality review"
-    ]
-  },
-  {
-    "id": "pkg-advanced-health",
-    "slug": "advanced-health-package",
-    "name": "Advanced Health Package",
-    "subtitle": "Comprehensive Full Body Checkup with Vitamins, HbA1c & Iron Profile (MRP ₹3,999)",
-    "tag": "Most Comprehensive ₹1,499",
-    "description": "Our flagship comprehensive full body checkup covering 12 vital clinical profiles: CBC, ESR, Fasting Blood Sugar, HbA1c (Glycated Hemoglobin), KFT Extended, LFT, Lipid Profile, Thyroid Profile, Complete Iron Profile, Vitamin D (25-OH), Vitamin B12, and Urine Routine & Microscopy. Free Home Collection.",
-    "originalPrice": 3999,
-    "offerPrice": 1499,
-    "couplePrice": 2899,
-    "savings": 2500,
-    "parametersCount": 78,
-    "sampleType": "Blood & Urine (Fasting)",
-    "fastingRequired": true,
-    "fastingHours": 10,
-    "reportDeliveryHours": 12,
-    "posterImage": "/images/advanced-health-package-brochure.svg",
-    "isFeatured": true,
-    "isActive": true,
-    "inclusionsSummary": [
-      "CBC & ESR (24 parameters)",
-      "Sugar Fasting & HbA1c (3-Month Sugar Average)",
-      "KFT Extended - Kidney Function Test",
-      "LFT - Liver Function Test (11 parameters)",
-      "Lipid Profile (Cholesterol, HDL, LDL, VLDL, Triglycerides)",
-      "Thyroid Profile (Total T3, Total T4, TSH)",
-      "Complete Iron Profile (Serum Iron, TIBC, Ferritin)",
-      "Vitamin D (25-Hydroxy)",
-      "Vitamin B12 (Cyanocobalamin)",
-      "Urine Routine & Microscopy"
-    ],
-    "includedTests": [
+    "faqs": [
       {
-        "name": "CBC & ESR",
-        "description": "Complete blood count and inflammatory index",
-        "parameters": [
-          "Haemoglobin",
-          "TLC",
-          "DLC",
-          "Platelet Count",
-          "RBC",
-          "PCV",
-          "MCV",
-          "ESR"
-        ],
-        "purpose": "Detects infections, anemia, and general health status"
+        "question": "Who should take the Cardiac Health Profile?",
+        "answer": "Recommended for all adults aged 30 and above, individuals with high blood pressure, diabetes, high cholesterol, chest discomfort, shortness of breath, a family history of premature heart disease, or significant lifestyle stress/smoking."
       },
       {
-        "name": "Sugar Fasting & HbA1c",
-        "description": "Dual glycemic evaluation with 3-month average",
-        "parameters": [
-          "Fasting Blood Glucose",
-          "HbA1c Glycated Hemoglobin",
-          "Estimated Average Glucose"
-        ],
-        "purpose": "Identifies acute fasting blood glucose and long-term 90-day glycemic trends"
+        "question": "What makes Troponin-T and CPK-MB important in this profile?",
+        "answer": "Troponin-T and CPK-MB are highly specific biological markers that detect subtle heart muscle stress or damage long before symptoms or routine ECG changes become apparent."
       },
       {
-        "name": "KFT (Kidney Function Test)",
-        "description": "Renal function and filtration evaluation",
-        "parameters": [
-          "Urea",
-          "Creatinine",
-          "Uric Acid",
-          "BUN",
-          "eGFR Calculation"
-        ],
-        "purpose": "Assesses kidney filtration efficiency and metabolic clearance"
-      },
-      {
-        "name": "LFT (Liver Function Test)",
-        "description": "Comprehensive liver enzyme and protein panel",
-        "parameters": [
-          "Bilirubin Total",
-          "Bilirubin Direct",
-          "SGOT / AST",
-          "SGPT / ALT",
-          "Alkaline Phosphatase",
-          "Total Protein",
-          "Albumin",
-          "Globulin",
-          "GGTP"
-        ],
-        "purpose": "Evaluates liver health, bile secretion, and enzyme integrity"
-      },
-      {
-        "name": "Lipid Profile",
-        "description": "Complete cardiovascular risk panel",
-        "parameters": [
-          "Total Cholesterol",
-          "Triglycerides",
-          "HDL Good Cholesterol",
-          "LDL Bad Cholesterol",
-          "VLDL"
-        ],
-        "purpose": "Assesses cardiovascular and atherosclerosis risk"
-      },
-      {
-        "name": "Thyroid Profile",
-        "description": "Complete thyroid hormone screen",
-        "parameters": [
-          "Total T3",
-          "Total T4",
-          "TSH Ultrasensitive"
-        ],
-        "purpose": "Screens for hypo/hyperthyroidism and metabolic rate disorders"
-      },
-      {
-        "name": "Complete Iron Profile",
-        "description": "Iron storage and transport markers",
-        "parameters": [
-          "Serum Iron",
-          "Total Iron Binding Capacity (TIBC)",
-          "Transferrin Saturation %"
-        ],
-        "purpose": "Detects latent iron deficiency, microcytic anemia, and chronic fatigue causes"
-      },
-      {
-        "name": "Vitamin D (25-Hydroxy)",
-        "description": "Essential bone and immune regulation vitamin",
-        "parameters": [
-          "25-OH Vitamin D Total"
-        ],
-        "purpose": "Evaluates bone mineral density, calcium absorption, and musculoskeletal strength"
-      },
-      {
-        "name": "Vitamin B12",
-        "description": "Neurological health and cellular metabolism vitamin",
-        "parameters": [
-          "Serum Vitamin B12 Cyanocobalamin"
-        ],
-        "purpose": "Crucial for nerve conduction, red blood cell formation, and cognitive vitality"
-      },
-      {
-        "name": "Urine Routine & Microscopy",
-        "description": "Routine examination of urine sediment and chemistry",
-        "parameters": [
-          "Color",
-          "pH",
-          "Specific Gravity",
-          "Protein",
-          "Sugar",
-          "Pus Cells",
-          "RBCs",
-          "Epithelial Cells"
-        ],
-        "purpose": "Detects urinary tract infections, renal excretion issues, and systemic metabolic changes"
+        "question": "What preparation is needed?",
+        "answer": "Fasting for 10-12 hours is recommended. You may drink plenty of plain water to stay well-hydrated."
       }
-    ],
-    "benefits": [
-      "Our most comprehensive full body checkup featuring 78+ parameters at ₹1,499 (MRP ₹3,999 — Save ₹2,500)",
-      "Includes HbA1c for accurate 3-month retrospective diabetes screening",
-      "Assesses Vitamin D3 and Vitamin B12 deficiencies for fatigue, bone, and nerve health",
-      "Complete Iron Profile detecting latent iron deficiency before anemia develops",
-      "Free Home Sample Collection in Delhi & Greater Noida (Aryan Saini: 8796645850)",
-      "Verified reports delivered within 12-14 hours online & via WhatsApp"
     ]
   },
   {
     "id": "pkg-hair-treatment-men",
     "slug": "hair-treatment-screening-men",
-    "name": "Hair Treatment Screening (Men's Package)",
-    "subtitle": "Targeted Trichology, Hormonal & Micronutrient Panel for Men",
+    "name": "Hair Fall Screening (Men's Package)",
+    "subtitle": "Targeted Trichology, Hormonal, Calcium & Micronutrient Panel for Men (Offer ₹2,499)",
     "tag": "Specialist Care ₹2,499",
-    "description": "Complete clinical hair loss diagnostic evaluation for men designed to identify underlying hormonal, nutritional, and inflammatory triggers of hair thinning, alopecia, and scalp disorders.",
-    "originalPrice": 5200,
+    "description": "Complete clinical hair loss diagnostic evaluation for men from our official flyer. Covers 10 comprehensive investigations: Testosterone Total, Serum Ferritin, C-Reactive Protein (CRP), Complete Blood Count (CBC), Serum ZINC/Plasma, Vitamin D25-Hydroxy, Vitamin B12, Iron Profile, Thyroid Profile, and S. Calcium.",
+    "originalPrice": 4999,
     "offerPrice": 2499,
     "couplePrice": 4500,
-    "savings": 2701,
-    "parametersCount": 42,
+    "savings": 2500,
+    "parametersCount": 46,
     "sampleType": "Blood (Serum & EDTA)",
     "fastingRequired": true,
     "fastingHours": 10,
     "reportDeliveryHours": 14,
-    "posterImage": "/images/hair-fall-screening-men-brochure.svg",
+    "posterImage": "/images/hair-fall-screening-10tests-official.jpg",
     "isFeatured": true,
     "isActive": true,
+    "benefits": [
+      "Accurate Testing & Diagnosis",
+      "Quality Assured NABL Standards",
+      "Expert Trichology Support",
+      "Timely Digital Reports",
+      "Free Home Collection: 8796645850"
+],
     "inclusionsSummary": [
-      "Testosterone Total (Hormonal Male Pattern Hair Loss Screen)",
-      "Serum Ferritin (Iron Storage for Follicle Growth)",
-      "C-Reactive Protein (Qualitative Inflammation Index)",
-      "Complete Blood Count (CBC & ESR - 24 parameters)",
-      "Serum Zinc / Plasma (Keratin Synthesis & Follicle Repair)",
-      "Vitamin D25-Hydroxy (Follicle Cycling & Scalp Health)",
-      "Vitamin B12 (RBC Production & Follicle Oxygenation)",
-      "Complete Iron Profile (Serum Iron, TIBC, Transferrin)",
-      "Thyroid Profile (Total T3, Total T4, TSH Ultrasensitive)"
+      "1. Testosterone Total — Complete (Primary androgen linked to DHT & male baldness)",
+      "2. Serum Ferritin — Complete (Deep iron storage essential for follicle root strength)",
+      "3. C-Reactive Protein — Qualitative (Screens for micro-vascular scalp inflammation)",
+      "4. Complete Blood Count (CBC) — Complete (24 params, oxygenation & anemia check)",
+      "5. Serum ZINC/Plasma — Complete (Keratin synthesis & follicle repair)",
+      "6. Vitamin D25-Hydroxy — Complete (Follicular stem cell activation & hair cycle)",
+      "7. Vitamin B12 — Complete (RBC production & follicle matrix nourishment)",
+      "8. Iron Profile — Complete (Serum Iron, UIBC, TIBC, % Transferrin Saturation)",
+      "9. Thyroid Profile — Complete (Total T3, Total T4, TSH Ultrasensitive)",
+      "10. S. Calcium — Complete (Structural mineral essential for follicle integrity)"
     ],
     "includedTests": [
       {
         "name": "Testosterone Total",
-        "description": "Primary androgen hormone regulating male hair growth cycles",
+        "description": "Primary male hormone regulating hair growth cycles",
         "parameters": [
           "Total Testosterone"
         ],
-        "purpose": "Identifies androgenic alopecia risk and hormonal hair thinning patterns"
+        "purpose": "Identifies androgenic alopecia risk, DHT conversion triggers, and hormonal thinning patterns"
       },
       {
         "name": "Serum Ferritin",
-        "description": "Primary intracellular iron storage protein",
+        "description": "Primary cellular iron store index",
         "parameters": [
           "Serum Ferritin"
         ],
-        "purpose": "Critical for hair follicle matrix proliferation; deficiency causes diffuse hair shedding"
+        "purpose": "Evaluates follicle root iron reserves; deficient ferritin triggers premature telogen shedding"
       },
       {
-        "name": "C-Reactive Protein (Qualitative)",
-        "description": "Systemic acute inflammatory marker",
+        "name": "C-Reactive Protein (CRP)",
+        "description": "Qualitative inflammatory marker",
         "parameters": [
-          "CRP Qualitative"
+          "CRP (Qualitative)"
         ],
-        "purpose": "Rules out chronic scalp micro-inflammation, autoimmune alopecia, or systemic stress"
+        "purpose": "Screens for scalp micro-inflammation, folliculitis triggers, and systemic stress"
       },
       {
-        "name": "Complete Blood Count (CBC & ESR)",
-        "description": "24-parameter hematological profile",
+        "name": "Complete Blood Count (CBC)",
+        "description": "Full hematological profile",
         "parameters": [
           "Hemoglobin",
           "TLC",
-          "DLC",
+          "DLC (5-part)",
           "Platelet Count",
-          "RBC",
-          "PCV",
+          "Total RBC",
           "MCV",
-          "ESR"
+          "MCH",
+          "MCHC",
+          "PCV"
         ],
-        "purpose": "Screens for anemia, infections, and vascular delivery of nutrients to scalp follicles"
+        "purpose": "Ensures adequate oxygen-carrying capacity and capillary nourishment to scalp papillae"
       },
       {
-        "name": "Serum Zinc / Plasma",
-        "description": "Essential trace mineral for keratinocyte division",
+        "name": "Serum ZINC / Plasma",
+        "description": "Essential trace element concentration",
         "parameters": [
           "Serum Zinc"
         ],
-        "purpose": "Zinc deficiency causes telogen effluvium and brittle hair shafts"
+        "purpose": "Cofactor in protein synthesis, keratin construction, and hair matrix cell division"
       },
       {
         "name": "Vitamin D25-Hydroxy",
-        "description": "Steroid hormone regulating hair follicle stem cell differentiation",
+        "description": "Steroid pre-hormone governing follicle cycles",
         "parameters": [
-          "Vitamin D (25-OH)"
+          "Vitamin D25-OH Total"
         ],
-        "purpose": "Activates hair follicle anagen phase and supports new follicle development"
+        "purpose": "Stimulates dormant hair follicles into the active anagen growth phase"
       },
       {
-        "name": "Vitamin B12 (Cyanocobalamin)",
-        "description": "Essential micronutrient for red blood cell and DNA synthesis",
+        "name": "Vitamin B12",
+        "description": "Cyanocobalamin concentration",
         "parameters": [
-          "Serum Vitamin B12"
+          "Vitamin B12"
         ],
-        "purpose": "Prevents premature follicular graying and poor microvascular scalp perfusion"
+        "purpose": "Powers rapid DNA synthesis in rapidly dividing follicle matrix cells"
       },
       {
-        "name": "Complete Iron Profile",
-        "description": "Comprehensive iron transport and binding evaluation",
+        "name": "Iron Profile",
+        "description": "Complete serum iron dynamics",
         "parameters": [
           "Serum Iron",
-          "Total Iron Binding Capacity (TIBC)",
-          "Transferrin Saturation"
+          "TIBC",
+          "UIBC",
+          "% Transferrin Saturation"
         ],
-        "purpose": "Detects subclinical iron depletion before full-blown anemia occurs"
+        "purpose": "Detects latent iron deficiency that causes gradual diffuse hair thinning"
       },
       {
         "name": "Thyroid Profile",
-        "description": "Triiodothyronine (T3), Thyroxine (T4), and TSH",
+        "description": "Metabolic axis evaluation",
         "parameters": [
           "Total T3",
           "Total T4",
           "TSH Ultrasensitive"
         ],
-        "purpose": "Thyroid imbalances are a frequent hidden trigger for male hair thinning and dry scalp"
+        "purpose": "Screens for hypo- and hyper-thyroidism causing brittle hair and accelerated shedding"
+      },
+      {
+        "name": "S. Calcium",
+        "description": "Serum calcium level",
+        "parameters": [
+          "Serum Calcium"
+        ],
+        "purpose": "Essential mineral for hair bulb anchoring, cellular signaling and structural hair density"
       }
     ],
-    "benefits": [
-      "Targeted male androgenic alopecia & telogen effluvium root cause diagnostic",
-      "Single person: ₹2,499 / Two persons: ₹4,500 (Save up to ₹5,900)",
-      "Assesses testosterone, micronutrient deficiencies, and cellular oxygenation",
-      "Includes Serum Zinc, Ferritin, Vit D, and B12 essential for hair follicle dermal papilla cells",
-      "Free Home Sample Collection arranged via Aryan Saini: 8796645850",
-      "Delivered in 12-14 hours with detailed trichological biomarkers"
+    "faqs": [
+      {
+        "question": "Why are 10 tests included in the Men's Hair Fall Screening?",
+        "answer": "Male hair thinning is often multifactorial — driven by testosterone/DHT sensitivity, low ferritin or zinc, vitamin D/B12 deficiencies, or thyroid imbalance. This 10-test panel pinpoints the exact clinical trigger."
+      },
+      {
+        "question": "What is the single vs two person price?",
+        "answer": "As printed on our official brochure, single person testing is ₹2,499/-, and two persons / combo is ₹4,500/- (saving an extra ₹500)."
+      },
+      {
+        "question": "How can I book free home collection?",
+        "answer": "Book directly through our website or call / WhatsApp Aryan Saini at 8796645850 for priority doorstep sample pickup in Greater Noida & Delhi NCR."
+      }
     ]
   },
   {
     "id": "pkg-hair-treatment-women",
     "slug": "hair-treatment-screening-women",
-    "name": "Hair Treatment Screening (Women's Package)",
-    "subtitle": "Targeted Trichology, Hormonal (Progesterone & Testosterone) & Micronutrient Panel for Women",
+    "name": "Hair Fall Screening (Women's Package)",
+    "subtitle": "Targeted Trichology, Hormonal (Progesterone & Testosterone) & Micronutrient Panel for Women (Offer ₹2,499)",
     "tag": "Specialist Care ₹2,499",
-    "description": "Comprehensive female hair thinning and shedding screening covering key reproductive hormones, iron stores, vitamins, and minerals that govern female hair follicle cycles and prevent diffuse hair loss.",
-    "originalPrice": 5600,
+    "description": "Comprehensive female hair thinning and shedding evaluation from our official brochure. Covers 10 targeted investigations: Complete Blood Count (CBC), Serum Ferritin, Folic Acid (Folate), Testosterone Total, Serum ZINC/Plasma, Iron Profile, Vitamin D25-Hydroxy, Vitamin B12, Progesterone, and Thyroid Profile.",
+    "originalPrice": 5499,
     "offerPrice": 2499,
     "couplePrice": 4500,
-    "savings": 3101,
-    "parametersCount": 44,
+    "savings": 3000,
+    "parametersCount": 46,
     "sampleType": "Blood (Serum & EDTA)",
     "fastingRequired": true,
     "fastingHours": 10,
     "reportDeliveryHours": 14,
-    "posterImage": "/images/hair-fall-screening-women-brochure.svg",
+    "posterImage": "/images/hair-fall-screening-10tests-official.jpg",
     "isFeatured": true,
     "isActive": true,
+    "benefits": [
+      "Accurate Testing & Diagnosis",
+      "Quality Assured NABL Standards",
+      "Expert Support for Female Hair Loss",
+      "Timely Digital Reports",
+      "Free Home Collection: 8796645850"
+],
     "inclusionsSummary": [
-      "Complete Blood Count (CBC & ESR - 24 parameters)",
-      "Serum Ferritin (Hair Root Iron Reserve)",
-      "Folic Acid / Folate (Cellular Division & DNA Repair in Follicles)",
-      "Testosterone Total (Hyperandrogenism & PCOS Hair Fall Screen)",
-      "Serum Zinc / Plasma (Scalp Sebum & Hair Protein Support)",
-      "Complete Iron Profile (Serum Iron, TIBC, % Saturation)",
-      "Vitamin D25-Hydroxy (Hair Follicle Stem Cell Stimulation)",
-      "Vitamin B12 (Follicular Oxygen Transport)",
-      "Progesterone (Hormonal Balance & Hair Cycle Regulation)",
-      "Thyroid Profile (Total T3, Total T4, TSH Ultrasensitive)"
+      "1. Complete Blood Count (CBC) — Complete (24 params, anemia & root oxygenation)",
+      "2. Serum Ferritin — Complete (Threshold >50 ng/mL required to stop female diffuse shedding)",
+      "3. Folic Acid (Folate) — Complete (Crucial for DNA replication & keratin synthesis in follicles)",
+      "4. Testosterone Total — Complete (Screens for hyperandrogenism & PCOS-related thinning)",
+      "5. Serum ZINC/Plasma — Complete (Trace element for follicular anchoring & scalp health)",
+      "6. Iron Profile — Complete (Serum Iron, UIBC, TIBC, % Saturation)",
+      "7. Vitamin D25-Hydroxy — Complete (Awakens follicle stem cells and triggers regrowth)",
+      "8. Vitamin B12 — Complete (Follicular nerve & capillary nourishment)",
+      "9. Progesterone — Complete (Luteal hormone balance preventing postpartum/chronic hair loss)",
+      "10. Thyroid Profile — Complete (Total T3, Total T4, TSH Ultrasensitive)"
     ],
     "includedTests": [
       {
-        "name": "Complete Blood Count (CBC & ESR)",
-        "description": "Complete hematological baseline",
+        "name": "Complete Blood Count (CBC)",
+        "description": "Full hematological profile",
         "parameters": [
           "Hemoglobin",
           "TLC",
-          "DLC",
+          "DLC (5-part)",
           "Platelet Count",
-          "RBC",
-          "PCV",
+          "Total RBC",
           "MCV",
-          "ESR"
+          "MCH",
+          "MCHC",
+          "PCV"
         ],
-        "purpose": "Screens for occult blood loss, microcytic anemia, and inflammatory triggers"
+        "purpose": "Screens for female microcytic/macrocytic anemia and oxygenation to hair roots"
       },
       {
         "name": "Serum Ferritin",
-        "description": "Hair root iron reserve and cellular storage index",
+        "description": "Deep cellular iron store concentration",
         "parameters": [
           "Serum Ferritin"
         ],
-        "purpose": "Ferritin below 40 ng/mL strongly correlates with female diffuse hair shedding"
+        "purpose": "#1 marker in women; levels below 50 ng/mL trigger chronic diffuse telogen effluvium"
       },
       {
         "name": "Folic Acid (Folate)",
-        "description": "Essential B-vitamin for rapid cell division in hair bulbs",
+        "description": "Serum folate concentration",
         "parameters": [
-          "Serum Folate / Folic Acid"
+          "Serum Folic Acid"
         ],
-        "purpose": "Assists in keratinocyte replication and tissue growth in active hair follicles"
+        "purpose": "Required for rapid DNA replication, keratinocyte division and hair shaft keratinization"
       },
       {
         "name": "Testosterone Total",
-        "description": "Circulating androgen assessment for women",
+        "description": "Female androgen evaluation",
         "parameters": [
           "Total Testosterone"
         ],
-        "purpose": "Detects hyperandrogenemia associated with PCOS, acne, and androgenic alopecia"
+        "purpose": "Detects hyperandrogenism, PCOS and hormonal scalp crown thinning"
       },
       {
-        "name": "Serum Zinc / Plasma",
-        "description": "Zinc level for structural keratin synthesis",
+        "name": "Serum ZINC / Plasma",
+        "description": "Essential trace element",
         "parameters": [
           "Serum Zinc"
         ],
-        "purpose": "Deficiency causes hair shedding, dry scalp, and delayed follicular regeneration"
+        "purpose": "Essential trace element for cellular repair, follicle anchoring and anti-dandruff health"
       },
       {
-        "name": "Complete Iron Profile",
-        "description": "Comprehensive iron metabolism and transport parameters",
+        "name": "Iron Profile",
+        "description": "Comprehensive iron panel",
         "parameters": [
           "Serum Iron",
           "TIBC",
-          "Transferrin Saturation %"
+          "UIBC",
+          "% Transferrin Saturation"
         ],
-        "purpose": "Identifies iron depletion before overt drop in hemoglobin appears"
+        "purpose": "Comprehensive blood iron dynamics to detect latent deficiency before full anemia"
       },
       {
         "name": "Vitamin D25-Hydroxy",
-        "description": "Essential steroid hormone for follicle cycling",
+        "description": "Serum 25-OH vitamin D3",
         "parameters": [
-          "Vitamin D (25-OH)"
+          "Vitamin D25-OH Total"
         ],
-        "purpose": "Stimulates new follicle initiation and maintains the anagen (growth) phase"
+        "purpose": "Steroid pre-hormone critical for awakening stem cells in the hair follicle bulge"
       },
       {
         "name": "Vitamin B12",
-        "description": "Cellular energy and red blood cell production cofactor",
+        "description": "Serum cyanocobalamin concentration",
         "parameters": [
-          "Serum Vitamin B12"
+          "Vitamin B12"
         ],
-        "purpose": "Ensures optimal oxygen and nutrient delivery to hair roots"
+        "purpose": "Protects follicle nerve supply and ensures oxygen delivery to root capillaries"
       },
       {
         "name": "Progesterone",
-        "description": "Crucial female reproductive steroid hormone",
+        "description": "Female luteal reproductive hormone",
         "parameters": [
           "Serum Progesterone"
         ],
-        "purpose": "Screens for luteal phase defects, estrogen dominance, and hormonal hair loss"
+        "purpose": "Key female luteal hormone; imbalance triggers postpartum & menopausal hair shedding"
       },
       {
         "name": "Thyroid Profile",
-        "description": "T3, T4, and TSH ultrasensitive panel",
+        "description": "Master metabolic thyroid axis",
         "parameters": [
           "Total T3",
           "Total T4",
           "TSH Ultrasensitive"
         ],
-        "purpose": "Thyroid dysfunction is among the leading clinical causes of female hair loss"
+        "purpose": "Screens for hypo/hyperthyroidism causing dry brittle hair and excessive shower shedding"
       }
     ],
-    "benefits": [
-      "Identifies PCOS, postpartum, menopausal, and nutritional causes of female hair shedding",
-      "Single person: ₹2,499 / Two persons: ₹4,500 (Save up to ₹6,700)",
-      "Tests Folic Acid, Progesterone, Zinc, and Ferritin alongside Thyroid & Testosterone",
-      "Free Home Sample Collection by trained phlebotomists (Aryan Saini: 8796645850)",
-      "Reports delivered in 12-14 hours with clinical reference ranges"
-    ]
-  },
-  {
-    "id": "pkg-cardiac-health",
-    "slug": "cardiac-health-profile",
-    "name": "Cardiac Health Profile",
-    "subtitle": "Comprehensive Heart Health, Cardiovascular Risk & Lipid Assessment (MRP ₹3,200)",
-    "tag": "Heart Wellness ₹1,299",
-    "description": "Specialized cardiovascular screening profile evaluating coronary artery risk, circulating lipid fractions, cardiac inflammation biomarkers, and cardio-renal function. Designed for early detection of heart disease, hypertension risks, and arterial plaque formation.",
-    "originalPrice": 3200,
-    "offerPrice": 1299,
-    "couplePrice": 2399,
-    "savings": 1901,
-    "parametersCount": 36,
-    "sampleType": "Blood (Serum, Fluoride & EDTA)",
-    "fastingRequired": true,
-    "fastingHours": 12,
-    "reportDeliveryHours": 12,
-    "posterImage": "/images/cardiac-health-profile-brochure.svg",
-    "isFeatured": true,
-    "isActive": true,
-    "inclusionsSummary": [
-      "Complete Lipid Profile (Total Cholesterol, HDL, LDL, VLDL, Triglycerides, TC/HDL Ratio)",
-      "High-Sensitivity C-Reactive Protein (hs-CRP / CRP Quantitative - Cardiac Inflammation)",
-      "Serum Homocysteine (Cardiovascular Arterial Risk Biomarker)",
-      "Blood Sugar Fasting (FBS - Diabetic Cardiovascular Risk)",
-      "HbA1c - Glycated Hemoglobin (3-Month Glycemic Index)",
-      "SGOT / AST (Cardiac Muscle Enzyme Evaluation)",
-      "Kidney Function & Cardio-Renal Biomarkers (Serum Creatinine, BUN, Uric Acid, eGFR)",
-      "CBC - Complete Blood Count (Haemoglobin, Platelet Count, PCV for Blood Viscosity)",
-      "Serum Electrolytes (Sodium, Potassium - Cardiac Rhythm Stability)"
-    ],
-    "includedTests": [
+    "faqs": [
       {
-        "name": "Complete Lipid Profile (7 Parameters)",
-        "description": "Complete cholesterol fraction analysis for atherosclerotic plaque risk",
-        "parameters": [
-          "Total Cholesterol",
-          "HDL Good Cholesterol",
-          "LDL Bad Cholesterol",
-          "VLDL Cholesterol",
-          "Triglycerides",
-          "TC/HDL Ratio",
-          "LDL/HDL Ratio"
-        ],
-        "purpose": "Identifies hypercholesterolemia, dyslipidemia, and arterial plaque risk"
+        "question": "Why are Ferritin, Folic Acid and Progesterone specifically tested for women?",
+        "answer": "In women, hair loss is most frequently triggered by low iron storage (Ferritin <50 ng/mL even with normal Hb), folate deficiency affecting hair keratin, or progesterone/estrogen imbalances. This panel isolates the exact hormonal or nutritional trigger."
       },
       {
-        "name": "High-Sensitivity CRP (hs-CRP)",
-        "description": "Ultra-sensitive cardiac inflammation biomarker",
-        "parameters": [
-          "High Sensitivity C-Reactive Protein"
-        ],
-        "purpose": "Predicts future cardiovascular events, vascular wall inflammation, and heart attack risk"
+        "question": "What is the offer price?",
+        "answer": "Single person testing is ₹2,499/- (MRP ₹5,499), and two persons / family combo is ₹4,500/-."
       },
       {
-        "name": "Serum Homocysteine",
-        "description": "Thrombogenic amino acid cardiovascular marker",
-        "parameters": [
-          "Serum Homocysteine Level"
-        ],
-        "purpose": "Detects endothelial damage, coronary artery disease risk, and deep vein thrombosis predisposition"
-      },
-      {
-        "name": "Diabetic Cardio Risk (FBS & HbA1c)",
-        "description": "Fasting Glucose & 3-month glycated hemoglobin panel",
-        "parameters": [
-          "Fasting Blood Sugar",
-          "HbA1c Glycated Hemoglobin",
-          "Estimated Average Glucose"
-        ],
-        "purpose": "Screens for diabetes-induced microvascular and macrovascular cardiac complications"
-      },
-      {
-        "name": "Cardio-Renal Profile (KFT & eGFR)",
-        "description": "Renal clearance and arterial hypertension indicators",
-        "parameters": [
-          "Serum Creatinine",
-          "Blood Urea Nitrogen (BUN)",
-          "Serum Uric Acid",
-          "eGFR Calculation"
-        ],
-        "purpose": "Evaluates cardio-renal syndrome, fluid volume regulation, and hypertension impact"
-      },
-      {
-        "name": "Cardiac Enzymes (SGOT / AST)",
-        "description": "Transaminase enzyme present in myocardium",
-        "parameters": [
-          "SGOT / AST"
-        ],
-        "purpose": "Assesses myocardial strain and tissue integrity"
-      },
-      {
-        "name": "CBC & ESR (Blood Viscosity & Oxygen Capacity)",
-        "description": "Complete blood count evaluating red cells and platelets",
-        "parameters": [
-          "Hemoglobin",
-          "PCV / Hematocrit",
-          "Platelet Count",
-          "TLC",
-          "DLC",
-          "ESR"
-        ],
-        "purpose": "Screens for hyperviscosity, thrombocytosis, and oxygen carrying capacity of the heart"
-      },
-      {
-        "name": "Serum Electrolytes (Sodium & Potassium)",
-        "description": "Essential electrolytes regulating cardiac electrical conduction",
-        "parameters": [
-          "Serum Sodium (Na+)",
-          "Serum Potassium (K+)"
-        ],
-        "purpose": "Prevents arrhythmia, electrolyte imbalance, and cardiac conduction disorders"
+        "question": "Can I take this test during my menstrual cycle?",
+        "answer": "Yes, though testing around day 21 (mid-luteal phase) is often optimal for progesterone interpretation. Our phlebotomist can advise you based on your cycle."
       }
-    ],
-    "benefits": [
-      "Comprehensive 36-parameter cardiac risk assessment at ₹1,299 (MRP ₹3,200 — Save ₹1,901)",
-      "Combines Lipid Profile, hs-CRP, Homocysteine, and Cardio-Renal screening in one panel",
-      "Crucial for individuals with family history of heart disease, hypertension, diabetes, or stressful lifestyles",
-      "Free Home Sample Collection in Delhi & Greater Noida (Aryan Saini: 8796645850)",
-      "Verified reports delivered within 12-14 hours online & via WhatsApp"
     ]
-  },
+  }
 ];
 
 export const INITIAL_TESTS: DiagnosticTest[] = [

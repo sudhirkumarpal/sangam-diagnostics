@@ -34,7 +34,7 @@ export function Header() {
     {
       label: 'Health Packages',
       href: '/packages',
-      badge: '₹799 Deals',
+      badge: '₹999 Deals',
     },
     { label: 'All Tests', href: '/tests' },
     {

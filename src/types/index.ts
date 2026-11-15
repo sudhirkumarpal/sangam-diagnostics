@@ -68,6 +68,10 @@ export interface Package {
     purpose?: string;
   }[];
   benefits: string[];
+  faqs?: {
+    question: string;
+    answer: string;
+  }[];
   posterImage?: string;
   isFeatured?: boolean;
   isActive: boolean;

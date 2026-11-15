@@ -694,7 +694,7 @@ export function PackageDetailClient({ pkg }: PackageDetailClientProps) {
 
               {/* Benefits Checklist */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm">
-                {pkg.benefits.map((b, i) => (
+                {(pkg.benefits || []).map((b, i) => (
                   <div key={i} className="flex items-start gap-2.5 p-3 rounded-xl bg-slate-50 border border-slate-100">
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0 mt-0.5" />
                     <span className="text-slate-700 font-medium">{b}</span>

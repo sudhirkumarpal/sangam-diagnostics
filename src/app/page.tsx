@@ -205,7 +205,7 @@ export default function HomePage() {
             <div className="bg-white rounded-3xl p-6 shadow-2xl text-slate-800 border-4 border-cyan-400/30 relative">
               {/* Highlight ribbon */}
               <div className="absolute -top-3.5 right-6 bg-gradient-to-r from-[#d90429] to-[#ef233c] text-white text-[11px] font-black uppercase tracking-wider py-1 px-3.5 rounded-full shadow-md">
-                Offer Price: ₹799 Only
+                Offer Price: ₹999 Only
               </div>
 
               <div className="mb-4">
@@ -221,10 +221,10 @@ export default function HomePage() {
                 <div>
                   <div className="text-[10px] text-slate-500 font-bold uppercase">Special Introductory Price</div>
                   <div className="flex items-baseline gap-2">
-                    <span className="text-3xl font-black text-[#0b3866]">₹799</span>
-                    <span className="text-sm line-through text-slate-400">₹2,399</span>
+                    <span className="text-3xl font-black text-[#0b3866]">₹999</span>
+                    <span className="text-sm line-through text-slate-400">₹2,499</span>
                     <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-md">
-                      Save ₹1,600
+                      Save ₹1,500 (60% OFF)
                     </span>
                   </div>
                 </div>
@@ -269,13 +269,13 @@ export default function HomePage() {
                       id: 'pkg-basic-health',
                       slug: 'basic-health-package',
                       name: 'Basic Health Package',
-                      price: 799,
+                      price: 999,
                     })
                   }
                   className="w-full py-3 bg-[#0b3866] hover:bg-[#082848] text-white font-black text-sm rounded-xl shadow-md transition-all flex items-center justify-center gap-2"
                 >
                   <Calendar className="w-4 h-4" />
-                  <span>Book Now at ₹799</span>
+                  <span>Book Now at ₹999</span>
                 </button>
 
                 <div className="flex gap-2">
@@ -511,9 +511,9 @@ export default function HomePage() {
           {/* Interactive Package Selector Tabs */}
           <div className="flex flex-wrap items-center justify-center gap-2 p-1.5 bg-slate-200/70 rounded-2xl max-w-4xl mx-auto">
             {[
-              { id: 'basic', label: 'Basic Health Package (₹799)', badge: 'Bestseller' },
-              { id: 'advanced', label: 'Advanced Health Package (₹1,499)', badge: 'Full Body' },
-              { id: 'cardiac', label: 'Cardiac Health Profile (₹1,299)', badge: 'Heart Care' },
+              { id: 'basic', label: 'Basic Health Package (₹999)', badge: 'Bestseller' },
+              { id: 'advanced', label: 'Platinum Health Package (₹1,499)', badge: 'Full Body' },
+              { id: 'cardiac', label: 'Cardiac Health Profile (₹2,499)', badge: 'Heart Care' },
               { id: 'hairfall', label: 'Hair Treatment Screening (₹2,499)', badge: 'Men & Women' },
             ].map((tab) => {
               const active = activeBrochure === tab.id;
@@ -542,14 +542,14 @@ export default function HomePage() {
 
           {/* Dynamic Package Showcase Card */}
           <div className="bg-white rounded-3xl border border-slate-200 shadow-2xl overflow-hidden">
-            {/* TAB 1: BASIC HEALTH PACKAGE (₹799) */}
+            {/* TAB 1: BASIC HEALTH PACKAGE (₹999) */}
             {activeBrochure === 'basic' && (
               <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
                 <div className="lg:col-span-5 bg-slate-900 p-6 sm:p-8 flex flex-col items-center justify-center text-center relative overflow-hidden">
                   <div className="relative w-full max-w-sm rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20 group">
                     <Image
-                      src="/images/full-body-health-package-3tiers.jpg"
-                      alt="Basic Health Package ₹799 - Sangam Diagnostics"
+                      src="/images/basic-health-package-official.jpg"
+                      alt="Basic Health Package ₹999 Official Brochure - Sangam Diagnostics"
                       width={600}
                       height={850}
                       className="w-full h-auto object-cover transform transition-transform duration-300 group-hover:scale-105"
@@ -566,10 +566,10 @@ export default function HomePage() {
                       Essential Preventive Care
                     </span>
                     <h3 className="text-3xl font-black text-[#0b3866] mt-2 leading-tight">
-                      Basic Health Package @ ₹799 Only
+                      Basic Health Package @ ₹999 Only
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 mt-1">
-                      Complete basic preventive health checkup covering 8 core clinical profiles (60+ parameters) with Free Home Sample Collection.
+                      Complete basic preventive health checkup covering 9 core clinical profiles (62 parameters) with Free Home Sample Collection.
                     </p>
                   </div>
 
@@ -577,19 +577,19 @@ export default function HomePage() {
                     <div className="p-4 rounded-2xl border-2 border-blue-200 bg-blue-50/40 space-y-2">
                       <div className="flex items-center justify-between">
                         <span className="font-bold text-xs text-[#0b3866] uppercase">Single Person</span>
-                        <span className="text-[10px] font-extrabold text-blue-700 bg-blue-100 px-2 py-0.5 rounded">60 Parameters</span>
+                        <span className="text-[10px] font-extrabold text-blue-700 bg-blue-100 px-2 py-0.5 rounded">62 Parameters</span>
                       </div>
                       <div className="flex items-baseline gap-2">
-                        <span className="text-3xl font-black text-[#0b3866]">₹799</span>
-                        <span className="text-xs line-through text-slate-400">₹2,399</span>
-                        <span className="text-xs font-bold text-emerald-600">Save ₹1,600</span>
+                        <span className="text-3xl font-black text-[#0b3866]">₹999</span>
+                        <span className="text-xs line-through text-slate-400">₹2,499</span>
+                        <span className="text-xs font-bold text-emerald-600">Save ₹1,500</span>
                       </div>
-                      <p className="text-[11px] text-slate-600">CBC, ESR, Fasting Sugar, KFT, LFT, Lipid, Thyroid, Urine RM.</p>
+                      <p className="text-[11px] text-slate-600">Lipid, CBC & ESR, LFT, KFT, Thyroid, eGFR, Fasting Sugar, Urine RM, S. Calcium.</p>
                       <button
-                        onClick={() => bookNow({ type: 'package', id: 'pkg-basic-health', slug: 'basic-health-package', name: 'Basic Health Package', price: 799 })}
+                        onClick={() => bookNow({ type: 'package', id: 'pkg-basic-health', slug: 'basic-health-package', name: 'Basic Health Package', price: 999 })}
                         className="w-full py-2.5 bg-[#0b3866] hover:bg-[#082848] text-white text-xs font-bold rounded-xl transition-colors mt-2"
                       >
-                        Book Single (₹799)
+                        Book Single (₹999)
                       </button>
                     </div>
 
@@ -638,7 +638,7 @@ export default function HomePage() {
                 <div className="lg:col-span-5 bg-slate-900 p-6 sm:p-8 flex flex-col items-center justify-center text-center relative overflow-hidden">
                   <div className="relative w-full max-w-sm rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20 group">
                     <Image
-                      src="/images/full-body-health-package-3tiers.jpg"
+                      src="/images/platinum-advanced-health-package-official.jpg"
                       alt="Advanced Health Package ₹1499 - Sangam Diagnostics"
                       width={600}
                       height={850}
@@ -656,10 +656,10 @@ export default function HomePage() {
                       Most Comprehensive 78+ Parameters
                     </span>
                     <h3 className="text-3xl font-black text-[#0b3866] mt-2 leading-tight">
-                      Advanced Health Package @ ₹1,499 Only
+                      Platinum Health Package (Advanced) @ ₹1,499 Only
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 mt-1">
-                      Our most comprehensive checkup covering 12 vital profiles including Vitamin D, Vitamin B12, Complete Iron Profile, and HbA1c (3-month diabetes average).
+                      Our flagship preventive checkup covering 13 major clinical profiles and 88 parameters from our official brochure. Includes Heart, Liver, Kidney, Thyroid, HbA1c, Vitamin D3, B12, Calcium & deep Iron Profile.
                     </p>
                   </div>
 
@@ -709,13 +709,13 @@ export default function HomePage() {
               </div>
             )}
 
-            {/* TAB 3: CARDIAC HEALTH PROFILE (₹1,299) */}
+            {/* TAB 3: CARDIAC HEALTH PROFILE (₹2,499) */}
             {activeBrochure === 'cardiac' && (
               <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
                 <div className="lg:col-span-5 bg-slate-900 p-6 sm:p-8 flex flex-col items-center justify-center text-center relative overflow-hidden">
                   <div className="relative w-full max-w-sm rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20 group">
                     <Image
-                      src="/images/blood-test-centre-1000-banner.jpg"
+                      src="/images/cardiac-health-profile-official.jpg"
                       alt="Cardiac Health Profile - Sangam Diagnostics"
                       width={600}
                       height={400}
@@ -733,23 +733,27 @@ export default function HomePage() {
                       Specialized Cardiovascular Screen
                     </span>
                     <h3 className="text-3xl font-black text-[#0b3866] mt-2 leading-tight">
-                      Cardiac Health Profile @ ₹1,299 Only
+                      Cardiac Health Profile @ ₹2,499 Special Offer
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 mt-1">
-                      Comprehensive cardiovascular evaluation designed for early detection of arterial plaque, heart inflammation, lipid disorders, and cardio-renal risk.
+                      A comprehensive checkup to assess your heart health and detect risks early from our official brochure. Includes high-specificity cardiac injury markers (Troponin-T, CPK-MB, CPK, S LDH, HS-CRP), Apolipoproteins (APO-1, APO-3), Lipid, LFT, KFT, eGFR, S. Calcium, Thyroid, Sugar & Urine.
                     </p>
                   </div>
 
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
                     {[
-                      'Complete Lipid Profile (7 params)',
-                      'High-Sensitivity CRP (hs-CRP)',
-                      'Serum Homocysteine',
-                      'Diabetic Cardio Risk (FBS & HbA1c)',
-                      'SGOT / AST (Heart Enzyme)',
-                      'Cardio-Renal KFT & eGFR',
-                      'CBC & ESR (Viscosity)',
-                      'Electrolytes (Sodium & Potassium)',
+                      'Troponin-T (Heart Attack Marker)',
+                      'CPK-MB (Heart Muscle Damage)',
+                      'HS-CRP (Arterial Inflammation)',
+                      'S LDH (Tissue Damage)',
+                      'CPK (General Muscle Enzyme)',
+                      'APO-1 & APO-3 (Apolipoproteins)',
+                      'Lipid Profile (Cholesterol, HDL, LDL)',
+                      'LFT (Metabolic Health)',
+                      'KFT & eGFR (Renal Filtration)',
+                      'Thyroid Profile (T3, T4, TSH)',
+                      'S. Calcium (Heart Rhythm)',
+                      'Sugar Fasting & Urine R/M',
                     ].map((item) => (
                       <div key={item} className="p-2.5 rounded-xl bg-slate-50 border border-slate-200 text-xs font-bold text-slate-800 text-center">
                         {item}
@@ -759,18 +763,18 @@ export default function HomePage() {
 
                   <div className="p-4 bg-rose-50 rounded-2xl border border-rose-200 flex items-center justify-between">
                     <div>
-                      <span className="text-xs text-rose-900 font-bold block">Cardiovascular Wellness Rate (MRP ₹3,200)</span>
-                      <span className="text-[11px] text-rose-700">Save ₹1,901 • 36 Parameters • Free Home Visit</span>
+                      <span className="text-xs text-rose-900 font-bold block">Special Limited Period Offer (Actual Price Higher)</span>
+                      <span className="text-[11px] text-rose-700">Save ₹2,500 • 16 Core Clinical Investigations • Free Home Visit</span>
                     </div>
-                    <span className="text-3xl font-black text-rose-700">₹1,299</span>
+                    <span className="text-3xl font-black text-rose-700">₹2,499</span>
                   </div>
 
                   <div className="pt-2 flex flex-wrap items-center gap-3">
                     <button
-                      onClick={() => bookNow({ type: 'package', id: 'pkg-cardiac-health', slug: 'cardiac-health-profile', name: 'Cardiac Health Profile', price: 1299 })}
+                      onClick={() => bookNow({ type: 'package', id: 'pkg-cardiac-health', slug: 'cardiac-health-profile', name: 'Cardiac Health Profile', price: 2499 })}
                       className="py-3 px-6 bg-rose-600 hover:bg-rose-700 text-white font-extrabold text-xs sm:text-sm rounded-xl transition-all shadow"
                     >
-                      Book Cardiac Profile (₹1,299)
+                      Book Cardiac Profile (₹2,499)
                     </button>
                     <a
                       href="tel:8796645850"
@@ -790,7 +794,7 @@ export default function HomePage() {
                 <div className="lg:col-span-5 bg-slate-900 p-6 sm:p-8 flex flex-col items-center justify-center text-center relative overflow-hidden">
                   <div className="relative w-full max-w-sm rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20 group">
                     <Image
-                      src="/images/hair-fall-screening-men-women.jpg"
+                      src="/images/hair-fall-screening-10tests-official.jpg"
                       alt="Hair Treatment Screening Mens and Womens Packages"
                       width={600}
                       height={850}
@@ -822,7 +826,7 @@ export default function HomePage() {
                         <span className="text-xs text-slate-600">Single Person:</span>
                         <span className="text-xl font-black text-[#0b3866]">₹2,499/-</span>
                       </div>
-                      <p className="text-[11px] text-slate-500">Testosterone, Ferritin, Zinc, Vitamin D, B12, Iron Profile, Thyroid, CRP, CBC.</p>
+                      <p className="text-[11px] text-slate-500">10 Tests: Testosterone Total, Ferritin, CRP, CBC, Zinc, Vit D, B12, Iron Profile, Thyroid, S. Calcium.</p>
                       <button
                         onClick={() => bookNow({ type: 'package', id: 'pkg-hair-treatment-men', slug: 'hair-treatment-screening-men', name: "Hair Treatment Screening (Men's)", price: 2499 })}
                         className="w-full py-2 bg-[#0b3866] text-white text-xs font-bold rounded-xl mt-1"
@@ -837,7 +841,7 @@ export default function HomePage() {
                         <span className="text-xs text-slate-600">Single Person:</span>
                         <span className="text-xl font-black text-rose-800">₹2,499/-</span>
                       </div>
-                      <p className="text-[11px] text-slate-500">Folic Acid, Progesterone, Ferritin, Zinc, Vit D, B12, Iron Profile, Testosterone, Thyroid, CBC.</p>
+                      <p className="text-[11px] text-slate-500">10 Tests: CBC, Ferritin, Folic Acid (Folate), Testosterone Total, Zinc, Iron Profile, Vit D, B12, Progesterone, Thyroid.</p>
                       <button
                         onClick={() => bookNow({ type: 'package', id: 'pkg-hair-treatment-women', slug: 'hair-treatment-screening-women', name: "Hair Treatment Screening (Women's)", price: 2499 })}
                         className="w-full py-2 bg-rose-700 text-white text-xs font-bold rounded-xl mt-1"
