@@ -1,0 +1,19 @@
+{
+  "name": "Sangam Diagnostics — Diagnostic Laboratory & Health Packages",
+  "short_name": "Sangam Diagnostics",
+  "description": "NABL Accredited Diagnostic Laboratory. Book Basic Health Package at ₹999, Full Body Checkup, CBC, LFT, KFT with Free Home Sample Collection in Delhi NCR.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#0b3866",
+  "categories": ["medical", "health", "lifestyle"],
+  "icons": [
+    {
+      "src": "/images/sangam-logo.jpg",
+      "sizes": "700x220",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}

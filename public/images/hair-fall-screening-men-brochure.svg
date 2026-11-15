@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200">
+  <defs>
+    <linearGradient id="menHeaderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b2a59" />
+      <stop offset="100%" stop-color="#071836" />
+    </linearGradient>
+    <linearGradient id="menCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f8fafc" />
+    </linearGradient>
+    <linearGradient id="menBannerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <linearGradient id="menBadgeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="800" height="1200" fill="#f8fafc" />
+
+  <!-- Top Decorative Header -->
+  <rect width="800" height="230" fill="url(#menHeaderGrad)" />
+  <circle cx="740" cy="50" r="130" fill="#0284c7" opacity="0.18" />
+  <circle cx="60" cy="180" r="80" fill="#3b82f6" opacity="0.12" />
+
+  <!-- Brand Header -->
+  <g transform="translate(50, 30)">
+    <rect x="0" y="0" width="70" height="70" rx="16" fill="#ffffff" />
+    <text x="35" y="50" font-family="Arial, sans-serif" font-size="44" font-weight="900" fill="#0b2a59" text-anchor="middle">S</text>
+    <circle cx="52" cy="24" r="8" fill="#e63946" />
+
+    <!-- Brand Typography -->
+    <text x="85" y="32" font-family="Arial, sans-serif" font-size="28" font-weight="900" fill="#ffffff" letter-spacing="2">SANGAM DIAGNOSTICS</text>
+    <text x="85" y="52" font-family="Arial, sans-serif" font-size="12" font-weight="700" fill="#94a3b8" letter-spacing="3">ACCURACY | CLARITY | RELIABLE RESULTS</text>
+    <text x="85" y="70" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#38bdf8">NABL ACCREDITED LAB • MC-7078</text>
+
+    <!-- Contact Pill Header -->
+    <rect x="470" y="5" width="230" height="60" rx="12" fill="#0284c7" />
+    <text x="585" y="28" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#e0f2fe" text-anchor="middle">FREE HOME COLLECTION</text>
+    <text x="585" y="50" font-family="Arial, sans-serif" font-size="17" font-weight="900" fill="#ffffff" text-anchor="middle">8796645850</text>
+  </g>
+
+  <!-- Big Banner Title -->
+  <g transform="translate(50, 130)">
+    <rect x="0" y="0" width="700" height="75" rx="16" fill="url(#menBannerGrad)" filter="url(#shadow)" />
+    <text x="350" y="36" font-family="Arial, sans-serif" font-size="24" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="1">HAIR FALL SCREENING — MEN&apos;S PACKAGE</text>
+    <text x="350" y="59" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#e0f2fe" text-anchor="middle" letter-spacing="2">SPECIALIZED MALE PATTERN BALDING &amp; FOLLICULAR HEALTH PROFILE</text>
+  </g>
+
+  <!-- Pricing Card Grid -->
+  <g transform="translate(50, 230)">
+    <!-- Left Price Box -->
+    <rect x="0" y="0" width="340" height="95" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)" />
+    <rect x="0" y="0" width="340" height="28" rx="14" fill="#0b2a59" />
+    <text x="170" y="19" font-family="Arial, sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">SINGLE PERSON OFFER</text>
+    <text x="170" y="64" font-family="Arial, sans-serif" font-size="32" font-weight="900" fill="#0b2a59" text-anchor="middle">&#8377;2,499/-</text>
+    <text x="170" y="83" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#64748b" text-anchor="middle">MRP <tspan text-decoration="line-through">&#8377;4,999</tspan> • FLAT 50% SAVINGS</text>
+
+    <!-- Right Price Box -->
+    <rect x="360" y="0" width="340" height="95" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#shadow)" />
+    <rect x="360" y="0" width="340" height="28" rx="14" fill="url(#menBadgeGrad)" />
+    <text x="530" y="19" font-family="Arial, sans-serif" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">TWO PERSONS / COMBO OFFER</text>
+    <text x="530" y="64" font-family="Arial, sans-serif" font-size="32" font-weight="900" fill="#0284c7" text-anchor="middle">&#8377;4,500/-</text>
+    <text x="530" y="83" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#64748b" text-anchor="middle">VALUE &#8377;9,998 • EXTRA &#8377;500 OFF</text>
+  </g>
+
+  <!-- Included Investigations Core Content -->
+  <g transform="translate(50, 345)">
+    <rect x="0" y="0" width="700" height="680" rx="18" fill="url(#menCardGrad)" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)" />
+
+    <!-- Section Heading -->
+    <rect x="0" y="0" width="700" height="42" rx="16" fill="#e2e8f0" />
+    <text x="350" y="27" font-family="Arial, sans-serif" font-size="14" font-weight="900" fill="#0f172a" text-anchor="middle" letter-spacing="1">
+      9 CLINICAL INVESTIGATIONS INCLUDED (COMPLETE PANEL)
+    </text>
+
+    <!-- Test List Table Grid -->
+    <!-- Item 1 -->
+    <g transform="translate(30, 60)">
+      <circle cx="16" cy="16" r="16" fill="#eff6ff" />
+      <text x="16" y="21" font-family="Arial, sans-serif" font-size="12" font-weight="900" fill="#1d4ed8" text-anchor="middle">01</text>
+      <text x="45" y="18" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#0f172a">Testosterone Total</text>
+      <rect x="520" y="5" width="100" height="22" rx="6" fill="#eff6ff" />
+      <text x="570" y="20" font-family="Arial, sans-serif" font-size="11" font-weight="800" fill="#1d4ed8" text-anchor="middle">COMPLETE</text>
+      <text x="45" y="36" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="#64748b">Primary hormone linked to DHT conversion and androgenetic male pattern baldness.</text>
+      <line x1="0" y1="46" x2="640" y2="46" stroke="#e2e8f0" stroke-width="1" />
+    </g>
+
+    <!-- Item 2 -->
+    <g transform="translate(30, 118)">
+      <circle cx="16" cy="16" r="16" fill="#eff6ff" />
+      <text x="16" y="21" font-family="Arial, sans-serif" font-size="12" font-weight="900" fill="#1d4ed8" text-anchor="middle">02</text>
+      <text x="45" y="18" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#0f172a">Serum Ferritin</text>
+      <rect x="520" y="5" width="100" height="22" rx="6" fill="#eff6ff" />
+      <text x="570" y="20" font-family="Arial, sans-serif" font-size="11" font-weight="800" fill="#1d4ed8" text-anchor="middle">COMPLETE</text>
+      <text x="45" y="36" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="#64748b">Essential cellular iron stores required for hair bulb matrix and follicle root strength.</text>
+      <line x1="0" y1="46" x2="640" y2="46" stroke="#e2e8f0" stroke-width="1" />
+    </g>
+
+    <!-- Item 3 -->
+    <g transform="translate(30, 176)">
+      <circle cx="16" cy="16" r="16" fill="#eff6ff" />
+      <text x="16" y="21" font-family="Arial, sans-serif" font-size="12" font-weight="900" fill="#1d4ed8" text-anchor="middle">03</text>
+      <text x="45" y="18" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#0f172a">C-Reactive Protein (CRP)</text>
+      <rect x="520" y="5" width="100" height="22" rx="6" fill="#fef2f2" />
+      <text x="570" y="20" font-family="Arial, sans-serif" font-size="11" font-weight="800" fill="#dc2626" text-anchor="middle">QUALITATIVE</text>
+      <text x="45" y="36" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="#64748b">Screens for systemic and micro-vascular scalp inflammation triggering telogen effluvium.</text>
+      <line x1="0" y1="46" x2="640" y2="46" stroke="#e2e8f0" stroke-width="1" />
+    </g>
+
+    <!-- Item 4 -->
+    <g transform="translate(30, 234)">
+      <circle cx="16" cy="16" r="16" fill="#eff6ff" />
+      <text x="16" y="21" font-family="Arial, sans-serif" font-size="12" font-weight="900" fill="#1d4ed8" text-anchor="middle">04</text>
+      <text x="45" y="18" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#0f172a">Complete Blood Count (CBC - 24 Parameters)</text>
+      <rect x="520" y="5" width="100" height="22" rx="6" fill="#eff6ff" />
+      <text x="570" y="20" font-family="Arial, sans-serif" font-size="11" font-weight="800" fill="#1d4ed8" text-anchor="middle">COMPLETE</text>
+      <text x="45" y="36" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="#64748b">Hb, RBC, MCV, MCH, TLC, DLC to assess scalp oxygenation, immunity &amp; cellular anemia.</text>
+      <line x1="0" y1="46" x2="640" y2="46" stroke="#e2e8f0" stroke-width="1" />
+    </g>
+
+    <!-- Item 5 -->
+    <g transform="translate(30, 292)">
+      <circle cx="16" cy="16" r="16" fill="#eff6ff" />
+      <text x="16" y="21" font-family="Arial, sans-serif" font-size="12" font-weight="900" fill="#1d4ed8" text-anchor="middle">05</text>
+      <text x="45" y="18" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#0f172a">Serum Zinc / Plasma</text>
+      <rect x="520" y="5" width="100" height="22" rx="6" fill="#eff6ff" />
+      <text x="570" y="20" font-family="Arial, sans-serif" font-size="11" font-weight="800" fill="#1d4ed8" text-anchor="middle">COMPLETE</text>
+      <text x="45" y="36" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="#64748b">Crucial cofactor for hair tissue growth, protein synthesis and sebum gland maintenance.</text>
+      <line x1="0" y1="46" x2="640" y2="46" stroke="#e2e8f0" stroke-width="1" />
+    </g>
+
+    <!-- Item 6 -->
+    <g transform="translate(30, 350)">
+      <circle cx="16" cy="16" r="16" fill="#eff6ff" />
+      <text x="16" y="21" font-family="Arial, sans-serif" font-size="12" font-weight="900" fill="#1d4ed8" text-anchor="middle">06</text>
+      <text x="45" y="18" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#0f172a">Vitamin D25-Hydroxy</text>
+      <rect x="520" y="5" width="100" height="22" rx="6" fill="#eff6ff" />
+      <text x="570" y="20" font-family="Arial, sans-serif" font-size="11" font-weight="800" fill="#1d4ed8" text-anchor="middle">COMPLETE</text>
+      <text x="45" y="36" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="#64748b">Regulates hair follicle cycle and triggers dormant follicles into active anagen growth phase.</text>
+      <line x1="0" y1="46" x2="640" y2="46" stroke="#e2e8f0" stroke-width="1" />
+    </g>
+
+    <!-- Item 7 -->
+    <g transform="translate(30, 408)">
+      <circle cx="16" cy="16" r="16" fill="#eff6ff" />
+      <text x="16" y="21" font-family="Arial, sans-serif" font-size="12" font-weight="900" fill="#1d4ed8" text-anchor="middle">07</text>
+      <text x="45" y="18" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#0f172a">Vitamin B12 (Cyanocobalamin)</text>
+      <rect x="520" y="5" width="100" height="22" rx="6" fill="#eff6ff" />
+      <text x="570" y="20" font-family="Arial, sans-serif" font-size="11" font-weight="800" fill="#1d4ed8" text-anchor="middle">COMPLETE</text>
+      <text x="45" y="36" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="#64748b">Powers cellular red blood cell production, nourishing the rapidly dividing hair matrix cells.</text>
+      <line x1="0" y1="46" x2="640" y2="46" stroke="#e2e8f0" stroke-width="1" />
+    </g>
+
+    <!-- Item 8 -->
+    <g transform="translate(30, 466)">
+      <circle cx="16" cy="16" r="16" fill="#eff6ff" />
+      <text x="16" y="21" font-family="Arial, sans-serif" font-size="12" font-weight="900" fill="#1d4ed8" text-anchor="middle">08</text>
+      <text x="45" y="18" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#0f172a">Iron Profile (Serum Iron, UIBC, TIBC, % Saturation)</text>
+      <rect x="520" y="5" width="100" height="22" rx="6" fill="#eff6ff" />
+      <text x="570" y="20" font-family="Arial, sans-serif" font-size="11" font-weight="800" fill="#1d4ed8" text-anchor="middle">COMPLETE</text>
+      <text x="45" y="36" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="#64748b">Measures serum binding capacity to rule out sub-clinical iron deficient hair thinning.</text>
+      <line x1="0" y1="46" x2="640" y2="46" stroke="#e2e8f0" stroke-width="1" />
+    </g>
+
+    <!-- Item 9 -->
+    <g transform="translate(30, 524)">
+      <circle cx="16" cy="16" r="16" fill="#eff6ff" />
+      <text x="16" y="21" font-family="Arial, sans-serif" font-size="12" font-weight="900" fill="#1d4ed8" text-anchor="middle">09</text>
+      <text x="45" y="18" font-family="Arial, sans-serif" font-size="15" font-weight="800" fill="#0f172a">Thyroid Profile (Total T3, Total T4, TSH Ultrasensitive)</text>
+      <rect x="520" y="5" width="100" height="22" rx="6" fill="#eff6ff" />
+      <text x="570" y="20" font-family="Arial, sans-serif" font-size="11" font-weight="800" fill="#1d4ed8" text-anchor="middle">COMPLETE</text>
+      <text x="45" y="36" font-family="Arial, sans-serif" font-size="12" font-weight="500" fill="#64748b">Identifies thyroid endocrine disturbances that cause acute hair thinning and coarse texture.</text>
+      <line x1="0" y1="46" x2="640" y2="46" stroke="#e2e8f0" stroke-width="1" />
+    </g>
+
+    <!-- Value Badges -->
+    <g transform="translate(20, 595)">
+      <rect x="0" y="0" width="155" height="55" rx="12" fill="#ffffff" stroke="#cbd5e1" />
+      <text x="77" y="24" font-family="Arial, sans-serif" font-size="11" font-weight="900" fill="#0b2a59" text-anchor="middle">100% AUTOMATED</text>
+      <text x="77" y="42" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#64748b" text-anchor="middle">Beckman Coulter</text>
+
+      <rect x="168" y="0" width="155" height="55" rx="12" fill="#ffffff" stroke="#cbd5e1" />
+      <text x="245" y="24" font-family="Arial, sans-serif" font-size="11" font-weight="900" fill="#0b2a59" text-anchor="middle">ONE PRICK POLICY</text>
+      <text x="245" y="42" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#64748b" text-anchor="middle">BD Vacutainer</text>
+
+      <rect x="336" y="0" width="155" height="55" rx="12" fill="#ffffff" stroke="#cbd5e1" />
+      <text x="413" y="24" font-family="Arial, sans-serif" font-size="11" font-weight="900" fill="#0b2a59" text-anchor="middle">SAME DAY REPORT</text>
+      <text x="413" y="42" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#64748b" text-anchor="middle">By 9 PM Online</text>
+
+      <rect x="504" y="0" width="155" height="55" rx="12" fill="#ffffff" stroke="#cbd5e1" />
+      <text x="581" y="24" font-family="Arial, sans-serif" font-size="11" font-weight="900" fill="#0284c7" text-anchor="middle">FREE HOME VISIT</text>
+      <text x="581" y="42" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#0369a1" text-anchor="middle">Greater Noida &amp; Delhi</text>
+    </g>
+  </g>
+
+  <!-- Bottom Location & Contact Footer -->
+  <g transform="translate(50, 1045)">
+    <rect x="0" y="0" width="700" height="115" rx="18" fill="url(#menHeaderGrad)" filter="url(#shadow)" />
+
+    <!-- Location Info -->
+    <text x="30" y="36" font-family="Arial, sans-serif" font-size="13" font-weight="900" fill="#38bdf8" letter-spacing="1">GREATER NOIDA COLLECTION CENTRE:</text>
+    <text x="30" y="58" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#ffffff">Shop No: PF-02, Paramount Golf Foreste Main Market, Greater Noida (UP)</text>
+    <text x="30" y="80" font-family="Arial, sans-serif" font-size="12" font-weight="600" fill="#94a3b8">Central Lab: Gali No. 3, New Chandrawal, Near Kamla Nagar, Delhi - 110007</text>
+    <text x="30" y="99" font-family="Arial, sans-serif" font-size="11" font-weight="600" fill="#cbd5e1">Delhi Helpline: 7982348151 • Verified by NABL Qualified Pathologists</text>
+
+    <!-- Direct Booking Call to Action -->
+    <rect x="470" y="22" width="205" height="70" rx="14" fill="#0284c7" />
+    <text x="572" y="46" font-family="Arial, sans-serif" font-size="11" font-weight="900" fill="#e0f2fe" text-anchor="middle">ARYAN SAINI (CENTRE HEAD)</text>
+    <text x="572" y="72" font-family="Arial, sans-serif" font-size="20" font-weight="900" fill="#ffffff" text-anchor="middle">8796645850</text>
+  </g>
+</svg>
