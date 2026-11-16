@@ -5,12 +5,30 @@ export type TestCategorySlug =
   | 'kidney-function'
   | 'thyroid'
   | 'diabetes'
+  | 'diabetes-kidney'
   | 'lipid-profile'
+  | 'heart-hypertension'
   | 'vitamins-minerals'
   | 'urine-tests'
   | 'hormonal'
   | 'fever-infection'
-  | 'preventive-health';
+  | 'joint-bone'
+  | 'cancer-screening'
+  | 'pregnancy-care'
+  | 'infertility'
+  | 'allergy'
+  | 'alcoholism'
+  | 'smoking'
+  | 'stress'
+  | 'anaemia'
+  | 'std'
+  | 'child-special'
+  | 'male-special'
+  | 'female-special'
+  | 'senior-male'
+  | 'senior-female'
+  | 'preventive-health'
+  | string;
 
 export interface DiagnosticTest {
   id: string;
@@ -22,8 +40,8 @@ export interface DiagnosticTest {
   description: string;
   price: number;
   discountedPrice?: number;
-  sampleType: 'Blood (Serum)' | 'Blood (EDTA Whole Blood)' | 'Blood (Fluoride Plasma)' | 'Urine' | 'Stool' | 'Swab';
-  tubeColor?: 'Purple / EDTA' | 'Red / Plain' | 'Grey / Sodium Fluoride' | 'Yellow / SST' | 'Sterile Container';
+  sampleType: string;
+  tubeColor?: string;
   fastingRequired: boolean;
   fastingHours?: number;
   reportDeliveryHours: number;

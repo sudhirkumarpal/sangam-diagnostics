@@ -193,7 +193,7 @@ export function Header() {
               className="hidden md:inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-2 text-slate-700 hover:text-[#0b3866] border border-slate-200 rounded-xl hover:bg-slate-50 transition-colors"
             >
               <User className="w-3.5 h-3.5 text-[#00a896]" />
-              <span>Portal</span>
+              <span>Patient Sign In</span>
             </Link>
 
             {/* Upload Prescription Button */}
@@ -287,22 +287,6 @@ export function Header() {
               >
                 <User className="w-4 h-4 text-[#00a896]" />
                 <span>Patient Account / Sign In</span>
-              </Link>
-              <Link
-                href="/collector"
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="flex items-center gap-2 py-2.5 px-3 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-50"
-              >
-                <Calendar className="w-4 h-4 text-amber-600" />
-                <span>Phlebotomist / Collector Portal</span>
-              </Link>
-              <Link
-                href="/admin"
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="flex items-center gap-2 py-2.5 px-3 rounded-lg text-sm font-semibold text-slate-700 hover:bg-slate-50"
-              >
-                <ShieldCheck className="w-4 h-4 text-purple-600" />
-                <span>Lab Administrator Dashboard</span>
               </Link>
             </div>
 

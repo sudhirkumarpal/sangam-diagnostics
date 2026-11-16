@@ -154,7 +154,12 @@ export function SearchBar({
           t.description.toLowerCase().includes(q) ||
           t.parameters.some((param) => param.toLowerCase().includes(q))
       );
-      return matchName || matchSub || matchDesc || matchTag || matchInclusions || matchTests;
+      const matchPrice =
+        p.offerPrice.toString().includes(q) ||
+        p.originalPrice.toString().includes(q) ||
+        `₹${p.offerPrice}`.includes(q) ||
+        `₹${p.originalPrice}`.includes(q);
+      return matchName || matchSub || matchDesc || matchTag || matchInclusions || matchTests || matchPrice;
     });
 
     const tests = INITIAL_TESTS.filter((t) => {
@@ -165,7 +170,12 @@ export function SearchBar({
       const matchDesc = t.description.toLowerCase().includes(q);
       const matchSig = t.clinicalSignificance.toLowerCase().includes(q);
       const matchParams = t.parameters.some((param) => param.toLowerCase().includes(q));
-      return matchName || matchCode || matchCat || matchDesc || matchSig || matchParams;
+      const matchPrice =
+        (t.discountedPrice ?? t.price).toString().includes(q) ||
+        t.price.toString().includes(q) ||
+        `₹${t.discountedPrice ?? t.price}`.includes(q) ||
+        `₹${t.price}`.includes(q);
+      return matchName || matchCode || matchCat || matchDesc || matchSig || matchParams || matchPrice;
     });
 
     const combined = [
